@@ -1,0 +1,193 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    tools:context="smartgeeks.cineapp.Menu.Perfil">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/ContenedorLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewTituloMisDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/banner_titulo"
+                    android:src="@mipmap/txt_perfil"
+                    android:elevation="6dp"
+                    android:gravity="center"
+                    android:textColor="@color/md_white_1000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ContenedorDatos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_below="@+id/ContenedorLogo">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="DOCUMENTO:"
+                        android:textColor="@color/md_teal_700" />
+
+                    <TextView
+                        android:id="@+id/tvDocumentoUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="id=tvNombreUsuario"
+                        android:textColor="@color/md_light_blue_500" />
+
+                    <View
+                        android:id="@+id/separador2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/side_nav_bar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="NOMBRE:"
+                        android:textColor="@color/md_teal_700" />
+
+                    <TextView
+                        android:id="@+id/tvNombreUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="id=tvCorreoUsuario"
+                        android:textColor="@color/md_light_blue_500" />
+
+                    <View
+                        android:id="@+id/separador4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/side_nav_bar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="DIRECCION:"
+                        android:textColor="@color/md_teal_700" />
+
+                    <TextView
+                        android:id="@+id/tvDireccionUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="id=tvCorreoUsuario"
+                        android:textColor="@color/md_light_blue_500" />
+
+                    <View
+                        android:id="@+id/separador5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/side_nav_bar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="TELEFONO:"
+                        android:textColor="@color/md_teal_700" />
+
+                    <TextView
+                        android:id="@+id/tvTelefonoUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="id=tvCorreoUsuario"
+                        android:textColor="@color/md_light_blue_500" />
+
+                    <View
+                        android:id="@+id/separador6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/side_nav_bar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="FECHA CUMPLEAÑOS:"
+                        android:textColor="@color/md_teal_700" />
+
+                    <TextView
+                        android:id="@+id/tvBirthDayUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="id=tvCorreoUsuario"
+                        android:textColor="@color/md_light_blue_500" />
+
+                    <View
+                        android:id="@+id/separador7"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/side_nav_bar" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnCerrarSesion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/btn_entrar"
+                        android:text="CERRAR SESSION"
+                        android:textColor="@color/md_white_1000" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:elevation="4dp"
+            android:src="@drawable/ic_edit_data"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="mini"
+            app:layout_anchor="@id/ContenedorLogo"
+            app:layout_anchorGravity="bottom|right|end"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>

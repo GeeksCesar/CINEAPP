@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Mis Peliculas</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="FCM_PREFERENCE">cm_pref</string>
+    <string name="FCM_TOKEN">fcm_token</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_button_view">ButtonView</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hint_user">Usuario</string>
+    <string name="hint_password">Password</string>
+
+    <!--PREFERENCES -->
+    <string name="pref_categoria">categoria</string>
+    <string name="idCategoria">IdCategoria</string>
+    <string name="usuId">IdUsuario</string>
+    <!--Usuario-->
+    <string name="usuPreferences">prefUser</string>
+    <string name="usuNombre">Nombres</string>
+    <string name="usuDocumento">Documento</string>
+    <string name="usuTelefono">Telefono</string>
+    <string name="usuDireccion">Direccion</string>
+    <string name="usuBirthDay">Birthday</string>
+    <string name="usuUsuario">Usuario</string>
+    <string name="usuPassword">Password</string>
+    <string name="usuSession">session</string>
+    <string name="usuObservaciones">Observaciones</string>
+
+    <!-- MESSAGE ERROR -->
+    <string name="nameError">Digite su Nombre </string>
+    <string name="docuError">Debe contener mínimo 7 digitos</string>
+    <string name="direccionError">Digite su Dirección</string>
+    <string name="emailError">Email Invalido</string>
+    <string name="passwordError">Contraseña debe contener 6 Caracteres mínimos</string>
+    <string name="phoneError">Telefono Requerido</string>
+    <string name="userError">El Usuario Debe contener 6 caracteres mínimos</string>
+
+    <!-- ALERT -->
+    <string name="alertInformacion">!Seleccione Tipo de Pago!</string>
+    <string name="progressMessage">Enviando</string>
+    <string name="title_movie">Peliculas</string>
+    <string name="title_carrito">Tu carrito</string>
+    <string name="title_vaciar_pedido">Vaciar pedido</string>
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
+    <string name="title_mi_perfil">mi Perfil</string>
+
+    <!-- internet -->
+    <string name="cone_error">Sin Conexión a Internet</string>
+    <string name="cone_tryAgain">Compruebe su Conexión</string>
+
+    <!-- RefreshLayout -->
+    <array name="swipeRefreshColors">
+        <item>@color/md_blue_900</item>
+        <item>@color/colorPrimary</item>
+    </array>
+
+</resources>

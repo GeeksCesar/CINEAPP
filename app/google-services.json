@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "967109839867",
+    "firebase_url": "https://cineapp-14de6.firebaseio.com",
+    "project_id": "cineapp-14de6",
+    "storage_bucket": "cineapp-14de6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967109839867:android:d147eb6f80c1559a",
+        "android_client_info": {
+          "package_name": "smartgeeks.cineapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967109839867-umqnhktutb416bb3fcn4s6l5vq1lokug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeRbNg5_1KG21Q6AICXthvl_LyMvjBKHI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

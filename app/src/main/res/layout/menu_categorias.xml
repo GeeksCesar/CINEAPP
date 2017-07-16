@@ -1,0 +1,31 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/md_white_1000"
+    tools:context="smartgeeks.cineapp.Menu.CategoriasPeliculas">
+
+    <ImageView
+        android:id="@+id/imageViewTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/banner_titulo"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:src="@mipmap/txt_categoria" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageViewTitulo"
+        android:visibility="visible"
+        android:elevation="2dp"
+        android:outlineProvider="bounds" />
+
+</RelativeLayout>

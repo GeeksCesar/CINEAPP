@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/side_nav_bar"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:src="@mipmap/txt_perfil" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewTitulo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EdDocumentoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_editext"
+                android:layout_marginBottom="@dimen/activity_botton_margin"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:background="@drawable/rounded_bottom"
+                android:elevation="@dimen/elevation_editext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/usuDocumento"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/md_blue_800"
+                android:textColorHint="@color/md_blue_grey_400"
+                android:textSize="@dimen/size_subtitle" />
+
+            <EditText
+                android:id="@+id/EdNombreEdit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_editext"
+                android:layout_marginBottom="@dimen/activity_botton_margin"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:background="@drawable/rounded_bottom"
+                android:elevation="@dimen/elevation_editext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/usuNombre"
+                android:inputType="textPersonName"
+                android:textColor="@color/md_blue_800"
+                android:textColorHint="@color/md_blue_grey_400"
+                android:textSize="@dimen/size_subtitle" />
+
+            <EditText
+                android:id="@+id/EdTelefonoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_editext"
+                android:layout_marginBottom="@dimen/activity_botton_margin"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:background="@drawable/rounded_bottom"
+                android:elevation="@dimen/elevation_editext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/usuTelefono"
+                android:inputType="phone"
+                android:textColor="@color/md_blue_800"
+                android:textColorHint="@color/md_blue_grey_400"
+                android:textSize="@dimen/size_subtitle" />
+
+            <EditText
+                android:id="@+id/EdDireccionEdit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_editext"
+                android:layout_marginBottom="@dimen/activity_botton_margin"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:background="@drawable/rounded_bottom"
+                android:elevation="@dimen/elevation_editext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/usuDireccion"
+                android:inputType="text"
+                android:textColor="@color/md_blue_800"
+                android:textColorHint="@color/md_blue_grey_400"
+                android:textSize="@dimen/size_subtitle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnEditarDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_entrar"
+                android:text="EDITAR DATOS"
+                android:textColor="@color/md_white_1000" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

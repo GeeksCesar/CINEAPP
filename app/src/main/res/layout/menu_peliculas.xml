@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        android:elevation="6dp">
+
+        <ImageView
+            android:id="@+id/imageViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/banner_titulo"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:src="@mipmap/txt_peliculas" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageViewTitulo">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvProductos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/md_white_1000" />
+
+
+                <ImageView
+                    android:id="@+id/ivValidacionPelicula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/txt_no_hay_peliculas"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000">
+
+    <RelativeLayout
+        android:id="@+id/contentImagenDialog"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <ProgressBar
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:id="@+id/ivImagenPelicula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="6dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/separador"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/contentImagenDialog"
+        android:background="@drawable/side_nav_bar" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvNombrePelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separador"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorHint"
+        android:textSize="15sp" />
+
+
+    <View
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/separador2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvNombrePelicula"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/side_nav_bar" />
+
+    <LinearLayout
+        android:id="@+id/contenedorMasMenos"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvNombrePelicula"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/btnQuitar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/btn_tu_merkado"
+            android:text="-"
+            android:textColor="@color/md_white_1000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvCantidadPel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="1"
+            android:textColor="@color/md_blue_900"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/btn_tu_merkado"
+            android:text="+"
+            android:textColor="@color/md_white_1000"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/btnAddCarrito"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvPrecioTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio:"
+            android:textColor="@color/colorHint"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:id="@+id/tvSigno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvPrecioPel"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="precio"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnAddCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_tu_merkado"
+        android:elevation="6dp"
+        android:src="@mipmap/txt_add" />
+
+</RelativeLayout>

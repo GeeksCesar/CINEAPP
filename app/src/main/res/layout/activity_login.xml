@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="smartgeeks.cineapp.LoginActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:id="@+id/ContenedorLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/banner_login"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ContenedorLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/ContenedorLogo">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textinput_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/md_text_white">
+
+                    <EditText
+                        android:id="@+id/EdUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textColor="@color/md_text_white"
+                        android:singleLine="true"
+                        android:padding="8dp"
+                        android:hint="@string/hint_user"
+                        android:textSize="@dimen/size_title" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textinput_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textinput_user"
+                    android:textColorHint="@color/md_text_white"
+                    app:passwordToggleEnabled = "true"
+                    app:passwordToggleTint="@color/md_text_white"
+                    app:passwordToggleDrawable="@drawable/ic_visibility">
+
+                    <EditText
+                        android:id="@+id/EdContra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textColor="@color/md_text_white"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:padding="8dp"
+                        android:hint="@string/hint_password"
+                        android:textSize="@dimen/size_title" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textinput_password"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/btn_entrar"
+                    android:drawablePadding="8dp"
+                    android:stateListAnimator="@null"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/size_subtitle"
+                    android:text="ENTRAR" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:elevation="4dp"
+        app:srcCompat="@drawable/ic_user_add"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/md_teal_500"
+        app:fabSize="normal"
+        app:layout_anchor="@id/ContenedorLogo"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>

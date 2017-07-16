@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000">
+
+    <TextView
+        android:id="@+id/tvSalirDialog"
+        android:gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:text="X"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_boton_cerrar"
+        android:textColor="@color/md_white_1000"
+        android:layout_alignParentLeft="true"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvSalirDialog"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputDialog_Nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorHint">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/EdNameDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:hint="@string/usuNombre"
+                    android:textColor="@color/colorHint"
+                    android:textSize="@dimen/size_hint"
+                    android:padding="8dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputDialog_Documento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputDialog_Nombre"
+                android:textColorHint="@color/colorHint">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/EdDocumentoDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/usuDocumento"
+                    android:maxLength="11"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/colorHint"
+                    android:textSize="@dimen/size_hint"
+                    android:padding="8dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputDialog_Direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputDialog_Documento"
+                android:textColorHint="@color/colorHint">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/EdDireccionDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/usuDireccion"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/colorHint"
+                    android:textSize="@dimen/size_hint"
+                    android:padding="8dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputDialog_Telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputDialog_Direccion"
+                android:textColorHint="@color/colorHint">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/EdTelefonoDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/usuTelefono"
+                    android:maxLength="11"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="@color/colorHint"
+                    android:textSize="@dimen/size_hint"
+                    android:padding="8dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnFechaBithday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputDialog_Telefono"
+                android:background="@drawable/btn_entrar"
+                android:layout_marginTop="2dp"
+                android:stateListAnimator="@null"
+                android:textColor="@color/md_white_1000"
+                android:text="FECHA CUMPLEAÑOS" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputDialog_Usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnFechaBithday"
+                android:textColorHint="@color/colorHint"
+                app:counterEnabled="true"
+                app:counterMaxLength="10">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/EdUsuarioDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="@string/usuUsuario"
+                    android:maxLength="10"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/colorHint"
+                    android:textSize="@dimen/size_hint"
+                    android:padding="8dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputDialog_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputDialog_Usuario"
+                android:textColorHint="@color/colorHint"
+                app:counterEnabled="true"
+                app:counterMaxLength="8"
+                app:passwordToggleEnabled = "true"
+                app:passwordToggleTint="@color/colorHint"
+                app:passwordToggleDrawable="@drawable/ic_visibility">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/EdPasswordDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLength="8"
+                    android:hint="@string/usuPassword"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/colorHint"
+                    android:textSize="@dimen/size_hint"
+                    android:padding="8dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_entrar"
+            android:drawablePadding="8dp"
+            android:layout_margin="10dp"
+            android:stateListAnimator="@null"
+            android:textColor="@color/md_white_1000"
+            android:text="REGISTRARME" />
+
+
+</RelativeLayout>

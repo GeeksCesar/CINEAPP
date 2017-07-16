@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_botton_movie"
+        android:icon="@drawable/ic_movie"
+        android:title="@string/title_movie" />
+
+    <item
+        android:id="@+id/nav_botton_carrito"
+        android:icon="@drawable/ic_carrito"
+        android:title="@string/title_carrito" />
+
+    <item
+        android:id="@+id/nav_botton_delete"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/title_vaciar_pedido" />
+
+    <item
+        android:id="@+id/nav_botton_perfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="@string/title_mi_perfil" />
+
+</menu>

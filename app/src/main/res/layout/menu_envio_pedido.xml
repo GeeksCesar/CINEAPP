@@ -1,0 +1,146 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="smartgeeks.cineapp.Menu.EnvioPedido">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/side_nav_bar"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:src="@mipmap/txt_dato_pedido" />
+
+        <EditText
+            android:id="@+id/etNombreLCiente"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_editext"
+            android:layout_below="@id/imageViewTitulo"
+            android:layout_marginBottom="@dimen/activity_botton_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/rounded_bottom"
+            android:elevation="@dimen/elevation_editext"
+            android:enabled="false"
+            android:hint="@string/usuNombre"
+            android:textColor="@color/md_blue_800"
+            android:textColorHint="@color/md_blue_grey_400" />
+
+        <EditText
+            android:id="@+id/etTelefonoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_editext"
+            android:layout_below="@id/etNombreLCiente"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:layout_marginBottom="@dimen/activity_botton_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/rounded_bottom"
+            android:elevation="@dimen/elevation_editext"
+            android:enabled="false"
+            android:hint="@string/usuTelefono"
+            android:inputType="phone"
+            android:textColor="@color/md_blue_800"
+            android:textColorHint="@color/md_blue_grey_400" />
+
+        <EditText
+            android:id="@+id/etDireccionC"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_editext"
+            android:layout_below="@id/etTelefonoCliente"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:layout_marginBottom="@dimen/activity_botton_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/rounded_bottom"
+            android:elevation="@dimen/elevation_editext"
+            android:enabled="false"
+            android:hint="@string/usuDireccion"
+            android:inputType="text"
+            android:textColor="@color/md_blue_800"
+            android:textColorHint="@color/md_blue_grey_400" />
+
+        <EditText
+            android:id="@+id/etObservaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etDireccionC"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:layout_marginBottom="@dimen/activity_botton_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/rounded_bottom"
+            android:elevation="@dimen/elevation_editext"
+            android:hint="@string/usuObservaciones"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textColor="@color/md_blue_800"
+            android:textColorHint="@color/md_blue_grey_400" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_editext"
+            android:layout_below="@+id/etObservaciones"
+            android:layout_marginBottom="@dimen/activity_botton_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:background="@color/md_white_1000"
+            android:elevation="@dimen/elevation_linear"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/TituloPago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Pago:"
+                android:textColor="@color/md_grey_500"
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/cbefectivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_weight="3"
+                android:buttonTint="@color/md_blue_800"
+                android:text="Efectivo"
+                android:textColor="@color/md_grey_700" />
+
+            <CheckBox
+                android:id="@+id/cbtarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="3"
+                android:buttonTint="@color/md_blue_800"
+                android:text="Tarjeta"
+                android:textColor="@color/md_grey_700" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnEnviarPedidoId"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_tu_merkado"
+            android:elevation="6dp"
+            android:src="@mipmap/txt_enviar" />
+
+    </RelativeLayout>
+
+</FrameLayout>

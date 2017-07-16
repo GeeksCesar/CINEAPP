@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Menu">
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_peliculas"
+                android:icon="@drawable/ic_movie"
+                android:title="Lista Peliculas" />
+            <item
+                android:id="@+id/nav_carrito"
+                android:icon="@drawable/ic_carrito"
+                android:title="Tu carrito" />
+            <item
+                android:id="@+id/nav_vaciarcarrito"
+                android:icon="@drawable/ic_delete"
+                android:title="Vaciar Pedido" />
+
+        </group>
+    </item>
+
+    <item
+        android:title="Usuario:">
+        <menu>
+            <item
+                android:id="@+id/nav_perfil"
+                android:icon="@drawable/ic_perfil"
+                android:title="Mi Perfil" />
+        </menu>
+    </item>
+
+
+</menu>
